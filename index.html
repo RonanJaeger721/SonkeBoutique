@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sonke Boutique Zw | UK Cosmetics & Beauty Supplies Boutique</title>
+    <meta name="description" content="Shop authentic UK cosmetics, skincare, makeup, haircare and beauty supplies from Sonke Boutique Zw in Harare with nationwide delivery.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="promo">Authentic UK cosmetics now available in Zimbabwe. Nationwide delivery from Harare.</div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Sonke Boutique Zw home">
+        <span class="brand-mark">S</span>
+        <span>
+          <strong>Sonke Boutique Zw</strong>
+          <small>UK Cosmetics & Beauty Supplies Boutique</small>
+        </span>
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#new">New In</a>
+        <a href="#shop">Shop</a>
+        <a href="#brands">Brands</a>
+        <a href="#delivery">Delivery</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button search-toggle" type="button" aria-label="Open search">Search</button>
+        <button class="cart-button" type="button" aria-label="Open cart">
+          Bag <span id="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="search-panel" id="search-panel" aria-label="Search products">
+        <label for="search-input">Search beauty essentials</label>
+        <input id="search-input" type="search" placeholder="Try e.l.f, BYOMA, serum, foundation">
+      </section>
+
+      <section class="hero">
+        <div class="hero-media" aria-label="Sonke Boutique campaign visuals">
+          <video autoplay muted loop playsinline poster="assets/sonke-grid-04.jpeg">
+            <source src="assets/sonke-video.mp4" type="video/mp4">
+          </video>
+          <img src="assets/sonke-grid-04.jpeg" alt="Sonke Boutique product campaign grid">
+        </div>
+        <div class="hero-copy">
+          <p>Harare based. UK sourced. Always authentic.</p>
+          <h1>Beauty shelf favourites, ready for local orders.</h1>
+          <div class="hero-actions">
+            <a class="primary-link" href="#shop">Shop Bestsellers</a>
+            <a class="secondary-link" href="#order">Place An Order</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-cats" aria-label="Shop categories">
+        <a href="#shop" data-filter-link="Skincare">Skincare</a>
+        <a href="#shop" data-filter-link="Makeup">Makeup</a>
+        <a href="#shop" data-filter-link="Haircare">Haircare</a>
+        <a href="#shop" data-filter-link="Bodycare">Bodycare</a>
+        <a href="#shop" data-filter-link="Fragrance">Fragrance</a>
+      </section>
+
+      <section class="section split" id="new">
+        <div>
+          <span class="eyebrow">Award winning supplier</span>
+          <h2>Curated UK beauty for every routine.</h2>
+          <p>Sonke Boutique Zw brings sought-after skincare, makeup, haircare and bodycare into one easy ordering experience. Browse the edit, add favourites to your bag, then checkout by WhatsApp or email.</p>
+        </div>
+        <div class="feature-grid">
+          <img src="assets/sonke-grid-01.jpeg" alt="Cosmetics and skincare campaign tiles">
+          <img src="assets/sonke-grid-05.jpeg" alt="Makeup and skincare product tiles">
+          <img src="assets/sonke-grid-08.jpeg" alt="Bodycare and skincare product tiles">
+        </div>
+      </section>
+
+      <section class="section shop-section" id="shop">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Shop the boutique</span>
+            <h2>Popular picks</h2>
+          </div>
+          <div class="filters" aria-label="Product filters">
+            <button class="filter active" type="button" data-filter="All">All</button>
+            <button class="filter" type="button" data-filter="Skincare">Skincare</button>
+            <button class="filter" type="button" data-filter="Makeup">Makeup</button>
+            <button class="filter" type="button" data-filter="Haircare">Haircare</button>
+            <button class="filter" type="button" data-filter="Bodycare">Bodycare</button>
+          </div>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="section brand-strip" id="brands">
+        <span>e.l.f.</span>
+        <span>BYOMA</span>
+        <span>EOS</span>
+        <span>The Ordinary</span>
+        <span>Revolution</span>
+        <span>Maybelline</span>
+        <span>Medicube</span>
+        <span>Urban Decay</span>
+      </section>
+
+      <section class="section split delivery" id="delivery">
+        <div>
+          <span class="eyebrow">Order confidence</span>
+          <h2>Authentic stock, boutique service, nationwide delivery.</h2>
+          <p>Order online for delivery across Zimbabwe or collection from Ruvimbo Mall, Shop 11, Harare. Product availability is confirmed before payment.</p>
+        </div>
+        <div class="service-list">
+          <div>
+            <strong>100% authentic</strong>
+            <p>UK cosmetics and beauty supplies sourced for real routines.</p>
+          </div>
+          <div>
+            <strong>Nationwide delivery</strong>
+            <p>Courier options confirmed after address and order review.</p>
+          </div>
+          <div>
+            <strong>Concierge help</strong>
+            <p>Ask for shade, skincare or routine guidance before checkout.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section order-section" id="order">
+        <div>
+          <span class="eyebrow">Checkout</span>
+          <h2>Place your order</h2>
+          <p>Your bag can be sent directly to Sonke Boutique for confirmation, invoice and delivery arrangement.</p>
+        </div>
+        <form class="order-form" id="order-form">
+          <label>
+            Full name
+            <input required name="name" autocomplete="name">
+          </label>
+          <label>
+            Email or WhatsApp number
+            <input required name="contact" autocomplete="tel">
+          </label>
+          <label>
+            Delivery area
+            <input required name="area" placeholder="Harare, Bulawayo, Mutare...">
+          </label>
+          <label>
+            Notes
+            <textarea name="notes" rows="4" placeholder="Shade requests, substitutions, delivery notes"></textarea>
+          </label>
+          <button class="primary-button" type="submit">Prepare Order Message</button>
+          <p class="form-note" id="form-note">Orders are confirmed before payment.</p>
+        </form>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true">
+      <div class="cart-panel">
+        <div class="cart-head">
+          <h2>Your Bag</h2>
+          <button class="icon-close" type="button" aria-label="Close cart">Close</button>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-total">
+          <span>Total estimate</span>
+          <strong id="cart-total">$0</strong>
+        </div>
+        <a class="primary-button full" id="whatsapp-checkout" href="#" target="_blank" rel="noopener">Checkout On WhatsApp</a>
+        <a class="secondary-button full" id="email-checkout" href="#">Email Order</a>
+      </div>
+    </aside>
+
+    <footer class="footer">
+      <div>
+        <strong>Sonke Boutique Zw</strong>
+        <p>Ruvimbo Mall, Shop 11, Harare, Zimbabwe</p>
+      </div>
+      <div>
+        <a href="mailto:sonkeconcierge@gmail.com">sonkeconcierge@gmail.com</a>
+        <a href="https://www.instagram.com/sonkeboutiquezw/" target="_blank" rel="noopener">@sonkeboutiquezw</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
