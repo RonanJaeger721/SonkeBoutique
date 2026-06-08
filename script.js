@@ -38,6 +38,7 @@ const state = {
 };
 
 const productGrid = document.querySelector("#product-grid");
+const featuredGrid = document.querySelector("#featured-grid");
 const cartDrawer = document.querySelector("#cart-drawer");
 const cartItems = document.querySelector("#cart-items");
 const cartCount = document.querySelector("#cart-count");
@@ -58,10 +59,17 @@ function visibleProducts() {
   });
 }
 
-function renderProducts() {
-  const items = visibleProducts();
-  productGrid.innerHTML = items.map((product) => `
+function productBadge(product, index) {
+  if (index < 4) return "Bestseller";
+  if (product.category === "Skincare" || product.category === "Fragrance") return "New";
+  if (product.price >= 30) return "Premium";
+  return "In stock";
+}
+
+function productCard(product, index) {
+  return `
     <article class="product-card">
+      <span class="product-badge">${productBadge(product, index)}</span>
       <div class="product-art" style="--card-a:${product.colors[0]}; --card-b:${product.colors[1]}">
         <img class="product-image" src="${product.image}" alt="${product.brand} ${product.name}" loading="eager" onerror="this.hidden=true; this.nextElementSibling.style.display='block';">
         <div class="product-shape" aria-hidden="true"></div>
@@ -75,7 +83,13 @@ function renderProducts() {
         </div>
       </div>
     </article>
-  `).join("") || `<p>No products found. Try another search.</p>`;
+  `;
+}
+
+function renderProducts() {
+  const items = visibleProducts();
+  productGrid.innerHTML = items.map(productCard).join("") || `<p>No products found. Try another search.</p>`;
+  featuredGrid.innerHTML = products.slice(0, 5).map(productCard).join("");
 }
 
 function addToCart(id) {
